@@ -116,6 +116,25 @@
 							"fragmentName": "UI5FioriElements_task.ext.view.CustomColumn"
 						}
 					}
+				},
+				"sap.ui.controllerExtensions": {
+					"sap.suite.ui.generic.template.ObjectPage.view.Details": {
+						"controllerName": "UI5FioriElements_task.ext.controller.ObjectPageExt",
+						"sap.ui.generic.app": {
+							"Categories": {
+								"EntitySet": "Categories",
+								"Header": {
+									"Actions": {
+										"ActionCategoriesHeader1": {
+											"id": "ActionCategoriesHeader1button",
+											"text": "{@i18n>ActionCategoriesHeader1}",
+											"press": "onClickActionCategoriesHeader1"
+										}
+									}
+								}
+							}
+						}
+					}
 				}
 			}
 		},
