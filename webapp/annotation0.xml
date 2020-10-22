@@ -11,10 +11,32 @@
 	<edmx:DataServices>
 		<Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="UI5FioriElements_task.annotation0.NorthwindModel">
 			<Annotations Target="Metadata.Category">
+				<Annotation Term="UI.DataPoint" Qualifier="status">
+					<Record Type="UI.DataPointType">
+						<PropertyValue Property="Value" Path="Statuses/StatusName"/>
+						<PropertyValue Property="Title" String="{@i18n&gt;Status}"/>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.HeaderInfo">
+					<Record Type="UI.HeaderInfoType">
+						<PropertyValue Property="TypeName" String="{@i18n&gt;CATEGORY}"/>
+						<PropertyValue Property="TypeNamePlural" String="{@i18n&gt;CATEGORYS}"/>
+						<PropertyValue Property="Description">
+							<Record Type="UI.DataField">
+								<PropertyValue Property="Value" Path="Description"/>
+							</Record>
+						</PropertyValue>
+						<PropertyValue Property="Title">
+							<Record Type="UI.DataField">
+								<PropertyValue Property="Value" Path="CategoryName"/>
+							</Record>
+						</PropertyValue>
+					</Record>
+				</Annotation>
 				<Annotation Term="UI.DataPoint">
 					<Record Type="UI.DataPointType">
 						<PropertyValue Property="Value" Path="ProductAvailabile"/>
-						<PropertyValue Property="Title" String="{@i18n&gt;AVAILABILITY}"/>
+						<PropertyValue Property="Title" String="{@i18n&gt;Availability}"/>
 						<PropertyValue Property="Visualization" EnumMember="UI.VisualizationType/Progress"/>
 						<PropertyValue Property="TargetValue" Int="100"/>
 					</Record>
