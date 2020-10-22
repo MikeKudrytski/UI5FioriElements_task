@@ -107,7 +107,17 @@
 			}
 		},
 		"extends": {
-			"extensions": {}
+			"extensions": {
+				"sap.ui.viewExtensions": {
+					"sap.suite.ui.generic.template.ListReport.view.ListReport": {
+						"ResponsiveTableColumnsExtension|Categories": {
+							"type": "XML",
+							"className": "sap.ui.core.Fragment",
+							"fragmentName": "UI5FioriElements_task.ext.view.CustomColumn"
+						}
+					}
+				}
+			}
 		},
 		"contentDensities": {
 			"compact": true,

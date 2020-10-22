@@ -11,6 +11,14 @@
 	<edmx:DataServices>
 		<Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="UI5FioriElements_task.annotation0.NorthwindModel">
 			<Annotations Target="Metadata.Category">
+				<Annotation Term="UI.DataPoint">
+					<Record Type="UI.DataPointType">
+						<PropertyValue Property="Value" Path="ProductAvailabile"/>
+						<PropertyValue Property="Title" String="{@i18n&gt;AVAILABILITY}"/>
+						<PropertyValue Property="Visualization" EnumMember="UI.VisualizationType/Progress"/>
+						<PropertyValue Property="TargetValue" Int="100"/>
+					</Record>
+				</Annotation>
 				<Annotation Term="UI.SelectionFields">
 					<Collection>
 						<PropertyPath>StatusID</PropertyPath>
@@ -45,6 +53,10 @@
 							<PropertyValue Property="Target" NavigationPropertyPath="Responsibles"/>
 							<PropertyValue Property="Value" Path="Responsibles/MiddleName"/>
 							<PropertyValue Property="Label" String="{@i18n&gt;MiddleName}"/>
+						</Record>
+						<Record Type="UI.DataFieldForAnnotation">
+							<PropertyValue Property="Target" AnnotationPath="@UI.DataPoint"/>
+							<PropertyValue Property="Label" String="{@i18n&gt;Availability}"/>
 						</Record>
 					</Collection>
 				</Annotation>
