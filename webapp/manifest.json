@@ -115,6 +115,16 @@
 							"className": "sap.ui.core.Fragment",
 							"fragmentName": "UI5FioriElements_task.ext.view.CustomColumn"
 						}
+					},
+					"sap.suite.ui.generic.template.ObjectPage.view.Details": {
+						"AfterFacet|Categories|com.sap.vocabularies.UI.v1.FieldGroup::categoryInf": {
+							"type": "XML",
+							"className": "sap.ui.core.mvc.View",
+							"viewName": "UI5FioriElements_task.ext.view.ImageView",
+							"sap.ui.generic.app": {
+								"title": "{@i18n>Image}"
+							}
+						}
 					}
 				},
 				"sap.ui.controllerExtensions": {
