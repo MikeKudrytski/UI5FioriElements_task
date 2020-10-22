@@ -1,0 +1,22 @@
+[{
+	"StatusID": 1,
+	"StatusName": "Новая",
+	"__metadata": {
+		"uri": "Statuses(416)",
+		"type": "NorthwindModel.Status"
+	}
+}, {
+	"StatusID": 2,
+	"StatusName": "Активная",
+	"__metadata": {
+		"uri": "Statuses(2584)",
+		"type": "NorthwindModel.Status"
+	}
+}, {
+	"StatusID": 3,
+	"StatusName": "Удаленная",
+	"__metadata": {
+		"uri": "Statuses(8688)",
+		"type": "NorthwindModel.Status"
+	}
+}]

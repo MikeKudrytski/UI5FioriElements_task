@@ -1,0 +1,62 @@
+[{
+	"CategoryID": 1,
+	"CategoryName": "Category Name 1",
+	"Description": "Category Description 1",
+	"Picture": "",
+	"Image": "",
+	"StatusID": 1,
+	"ResponsibleID": 1,
+	"ProductAvailabile": 3,
+	"ProductAvailabileState": "Product Availabile State 1",
+	"ProductTotal": "Product Total 1",
+	"__metadata": {
+		"uri": "Categories(1)",
+		"type": "NorthwindModel.Category"
+	},
+	"Products": {
+		"__deferred": {
+			"uri": "Categories(1)/Products"
+		}
+	},
+	"Statuses": {
+		"__deferred": {
+			"uri": "Categories(1)/Statuses"
+		}
+	},
+	"Responsibles": {
+		"__deferred": {
+			"uri": "Categories(1)/Responsibles"
+		}
+	}
+},
+{
+	"CategoryID": 2,
+	"CategoryName": "Category Name 2",
+	"Description": "Category Description 2",
+	"Picture": "",
+	"Image": "",
+	"StatusID": 2,
+	"ResponsibleID": 2,
+	"ProductAvailabile": 41,
+	"ProductAvailabileState": "Product Availabile State 2",
+	"ProductTotal": "Product Total 2",
+	"__metadata": {
+		"uri": "Categories(2)",
+		"type": "NorthwindModel.Category"
+	},
+	"Products": {
+		"__deferred": {
+			"uri": "Categories(2)/Products"
+		}
+	},
+	"Statuses": {
+		"__deferred": {
+			"uri": "Categories(2)/Statuses"
+		}
+	},
+	"Responsibles": {
+		"__deferred": {
+			"uri": "Categories(2)/Responsibles"
+		}
+	}
+}]

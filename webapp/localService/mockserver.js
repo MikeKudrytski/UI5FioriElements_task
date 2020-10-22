@@ -38,10 +38,10 @@ sap.ui.define([
 				rootUri: sMockServerUrl
 			});
 
-			// configure mock server with a delay of 1s
+			// configure mock server with a delay of 0.1s
 			MockServer.config({
 				autoRespond: true,
-				autoRespondAfter: (oUriParameters.get("serverDelay") || 1000)
+				autoRespondAfter: (oUriParameters.get("serverDelay") || 100)
 			});
 
 			// load local mock data

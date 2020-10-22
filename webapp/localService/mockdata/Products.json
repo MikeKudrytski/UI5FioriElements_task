@@ -1,0 +1,40 @@
+[{
+	"ProductID": 1,
+	"ProductName": "Product Name 1",
+	"CategoryID": 1,
+	"QuantityPerUnit": "Quantity Per Unit 1",
+	"UnitPrice": 14.20,
+	"UnitsInStock": 1898,
+	"UnitsOnOrder": 1082,
+	"ReorderLevel": 6618,
+	"Discontinued": false,
+	"__metadata": {
+		"uri": "Products(1)",
+		"type": "NorthwindModel.Product"
+	},
+	"Category": {
+		"__deferred": {
+			"uri": "Products(1)/Category"
+		}
+	}
+},
+{
+	"ProductID": 2,
+	"ProductName": "Product Name 2",
+	"CategoryID": 2,
+	"QuantityPerUnit": "Quantity Per Unit 2",
+	"UnitPrice": 275.40,
+	"UnitsInStock": 27,
+	"UnitsOnOrder": 9,
+	"ReorderLevel": 1443,
+	"Discontinued": false,
+	"__metadata": {
+		"uri": "Products(2)",
+		"type": "NorthwindModel.Product"
+	},
+	"Category": {
+		"__deferred": {
+			"uri": "Products(2)/Category"
+		}
+	}
+}]
