@@ -11,6 +11,14 @@
 	<edmx:DataServices>
 		<Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="UI5FioriElements_task.annotation0.NorthwindModel">
 			<Annotations Target="Metadata.Category">
+				<Annotation Term="UI.Facets">
+					<Collection>
+						<Record Type="UI.ReferenceFacet">
+							<PropertyValue Property="Target" AnnotationPath="Products/@UI.LineItem"/>
+							<PropertyValue Property="Label" String="{@i18n&gt;PRODUCTS}"/>
+						</Record>
+					</Collection>
+				</Annotation>
 				<Annotation Term="UI.DataPoint" Qualifier="status">
 					<Record Type="UI.DataPointType">
 						<PropertyValue Property="Value" Path="Statuses/StatusName"/>
@@ -125,6 +133,24 @@
 							</Collection>
 						</PropertyValue>
 					</Record>
+				</Annotation>
+			</Annotations>
+			<Annotations Target="Metadata.Product">
+				<Annotation Term="UI.LineItem">
+					<Collection>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="ProductName"/>
+							<PropertyValue Property="Label" String="{@i18n&gt;PRODUCTNAME}"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="UnitsInStock"/>
+							<PropertyValue Property="Label" String="{@i18n&gt;UNITSINSTOCK}"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="UnitPrice"/>
+							<PropertyValue Property="Label" String="{@i18n&gt;UNITPRICE}"/>
+						</Record>
+					</Collection>
 				</Annotation>
 			</Annotations>
 		</Schema>
