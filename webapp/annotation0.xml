@@ -11,11 +11,31 @@
 	<edmx:DataServices>
 		<Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="UI5FioriElements_task.annotation0.NorthwindModel">
 			<Annotations Target="Metadata.Category">
+				<Annotation Term="UI.FieldGroup" Qualifier="categoryInf">
+					<Record Type="UI.FieldGroupType">
+						<PropertyValue Property="Data">
+							<Collection>
+								<Record Type="UI.DataField">
+									<PropertyValue Property="Value" Path="ProductAvailabile"/>
+									<PropertyValue Property="Label" String="{@i18n&gt;Availability}"/>
+								</Record>
+								<Record Type="UI.DataField">
+									<PropertyValue Property="Value" Path="ProductAvailabileState"/>
+									<PropertyValue Property="Label" String="{@i18n&gt;PRODUCTAVAILABILESTATE}"/>
+								</Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
 				<Annotation Term="UI.Facets">
 					<Collection>
 						<Record Type="UI.ReferenceFacet">
 							<PropertyValue Property="Target" AnnotationPath="Products/@UI.LineItem"/>
 							<PropertyValue Property="Label" String="{@i18n&gt;PRODUCTS}"/>
+						</Record>
+						<Record Type="UI.ReferenceFacet">
+							<PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#categoryInf"/>
+							<PropertyValue Property="Label" String="{@i18n&gt;CATEGORYINF}"/>
 						</Record>
 					</Collection>
 				</Annotation>
