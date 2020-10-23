@@ -8,7 +8,7 @@
 	"ResponsibleID": 1,
 	"ProductAvailabile": 3,
 	"ProductAvailabileState": "Product Availabile State 1",
-	"ProductTotal": "Product Total 1",
+	"ProductTotal": "324",
 	"__metadata": {
 		"uri": "Categories(1)",
 		"type": "NorthwindModel.Category"
@@ -39,7 +39,7 @@
 	"ResponsibleID": 2,
 	"ProductAvailabile": 41,
 	"ProductAvailabileState": "Product Availabile State 2",
-	"ProductTotal": "Product Total 2",
+	"ProductTotal": "832",
 	"__metadata": {
 		"uri": "Categories(2)",
 		"type": "NorthwindModel.Category"

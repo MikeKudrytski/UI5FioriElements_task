@@ -114,6 +114,11 @@
 							"type": "XML",
 							"className": "sap.ui.core.Fragment",
 							"fragmentName": "UI5FioriElements_task.ext.view.CustomColumn"
+						},
+						"ResponsiveTableCellsExtension|Categories": {
+							"className": "sap.ui.core.Fragment",
+							"fragmentName": "UI5FioriElements_task.ext.view.CustomCell",
+							"type": "XML"
 						}
 					},
 					"sap.suite.ui.generic.template.ObjectPage.view.Details": {
@@ -138,7 +143,13 @@
 										"ActionCategoriesHeader1": {
 											"id": "ActionCategoriesHeader1button",
 											"text": "{@i18n>ActionCategoriesHeader1}",
-											"press": "onClickActionCategoriesHeader1"
+											"press": "onClickActionCategoriesHeader1",
+											"determining": true
+										},
+										"ActionCategoriesHeader2": {
+											"id": "ActionCategoriesHeader2button",
+											"text": "{@i18n>ActionCategoriesHeader2}",
+											"press": "onClickActionCategoriesHeader2"
 										}
 									}
 								}
