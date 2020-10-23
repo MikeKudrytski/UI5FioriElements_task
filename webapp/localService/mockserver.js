@@ -76,6 +76,36 @@ sap.ui.define([
 					}
 				});
 			}
+			
+			//Function import
+			aRequests.push({
+				method: "GET",
+				path: new RegExp("toActiveStatus(.*)"),
+				response: function (oXhr, sUrlParams) {
+					
+					function getRandom() {
+						var vol = Math.random();
+						if(vol > 0.5) {
+							return true;
+						} else {
+							return false;
+						}
+					}
+					
+					jQuery.sap.log.debug("Incoming request for toActiveStatus");
+
+					if (getRandom()) {
+						oXhr.respondJSON(200, {}, JSON.stringify({d: {StatusID: 3}}));	
+					} else {
+						oXhr.respondJSON(400, {});
+					}
+					return true;
+				}
+			});
+			oMockServer.setRequests(aRequests);
+			
+			
+			
 			oMockServer.start();
 
 			Log.info("Running the app with mock data");

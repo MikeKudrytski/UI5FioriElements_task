@@ -143,13 +143,13 @@
 										"ActionCategoriesHeader1": {
 											"id": "ActionCategoriesHeader1button",
 											"text": "{@i18n>ActionCategoriesHeader1}",
-											"press": "onClickActionCategoriesHeader1",
+											"press": "onClickDelete",
 											"determining": true
 										},
 										"ActionCategoriesHeader2": {
 											"id": "ActionCategoriesHeader2button",
 											"text": "{@i18n>ActionCategoriesHeader2}",
-											"press": "onClickActionCategoriesHeader2"
+											"press": "onClickActivate"
 										}
 									}
 								}
