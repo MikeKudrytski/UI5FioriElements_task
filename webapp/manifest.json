@@ -184,7 +184,7 @@
 							}
 						},
 						"smartVariantManagement": true,
-						"condensedTableLayout": true
+						"condensedTableLayout": false
 					}
 				},
 				"pages": {
